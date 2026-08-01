@@ -1,8 +1,19 @@
 aid: pragma
 name: Pragma
-description: 'Pragma is a company surfaced as a portfolio company of greylock, insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Pragma is a backend infrastructure company for game developers, used by more
+  than half of top PC and console studios (including studios such as Bungie, EA,
+  and Remedy) to launch and operate live games. The Pragma Platform provides a
+  game backend engine (game loops, player data, live operations, telemetry, and
+  admin dashboards), plus social and commerce services (cross-platform
+  authentication with Steam, Discord, Twitch, PlayStation, Xbox and more, virtual
+  currency, entitlements, and order management). Pragma Connect packages these as
+  a suite of backend tools for Unreal and Unity. Pragma also operates FirstLook, a
+  playtest and community-management platform that runs onboarding, key management,
+  surveys, rewards, creator programs, and player analytics — and exposes a public
+  external REST API (scoped API tokens), Unity/Unreal SDKs, and a hosted MCP server
+  for AI assistants. Added to the API Evangelist network from VC-portfolio signal
+  (Greylock, Insight Partners) and enriched from Pragma's public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/pragma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +22,77 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://pragma.gg/favicon.ico
 tags:
 - Company
 - Infrastructure
-apis: []
+- Gaming
+- Game Backend
+- Live Operations
+- Player Accounts
+- Authentication
+- Commerce
+- Playtesting
+- Community
+- Analytics
+- Developer Tools
+apis:
+- name: FirstLook External API
+  description: >-
+    Public external REST API for FirstLook, Pragma's playtest and community
+    platform. Uses scoped API tokens to query players, look up or find-or-create a
+    player, record analytics events (sessions, counters, durations), list and
+    export surveys, and search creators / read the creator leaderboard. Endpoint
+    detail is published as an interactive Swagger UI.
+  humanURL: https://docs.firstlook.gg/developers/api/
+  baseURL: https://api.firstlook.gg/external
+  tags:
+  - Playtesting
+  - Players
+  - Analytics
+  - Surveys
+  - Creators
+  properties:
+  - type: APIReference
+    url: https://api.firstlook.gg/external/swagger-ui/
+  - type: Documentation
+    url: https://docs.firstlook.gg/developers/api/
+  - type: MCPServer
+    url: mcp/pragma-mcp.yml
+  - type: LLMsTxt
+    url: llms/pragma-llms.txt
+- name: Pragma Connect
+  description: >-
+    Pragma Connect is a suite of backend game-development tools — player accounts,
+    social, economy/commerce, and Limited Access Mode — that integrate with Steam,
+    Twitch, Discord and more, with an API reference for Unreal and Unity titles.
+  humanURL: https://cloud-docs.pragma.gg/
+  baseURL: https://cloud-docs.pragma.gg
+  tags:
+  - Game Backend
+  - Accounts
+  - Social
+  - Commerce
+  properties:
+  - type: Documentation
+    url: https://cloud-docs.pragma.gg/
+  - type: APIReference
+    url: https://cloud-docs.pragma.gg/api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +101,52 @@ maintainers:
 common:
 - type: Website
   url: https://pragma.gg/
+- type: DeveloperPortal
+  url: https://cloud-docs.pragma.gg/
+- type: Documentation
+  url: https://docs.firstlook.gg/
+- type: APIReference
+  url: https://api.firstlook.gg/external/swagger-ui/
+- type: GettingStarted
+  url: https://cloud-docs.pragma.gg/get-started
+- type: Blog
+  url: https://pragma.gg/blog
+- type: Pricing
+  url: https://pragma.gg/pricing
+- type: SignUp
+  url: https://app.firstlook.gg/manage/~/signup
+- type: Support
+  url: https://pragma.gg/contact-us
+- type: TermsOfService
+  url: https://pragma.gg/terms-of-service
+- type: PrivacyPolicy
+  url: https://pragma.gg/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/pragmaplatform
+- type: StatusPage
+  url: https://status.firstlook.gg
+- type: MCPServer
+  url: mcp/pragma-mcp.yml
+- type: LLMsTxt
+  url: llms/pragma-llms.txt
+- type: Authentication
+  url: authentication/pragma-authentication.yml
+- type: OAuthScopes
+  url: scopes/pragma-scopes.yml
+- type: Conventions
+  url: conventions/pragma-conventions.yml
+- type: Lifecycle
+  url: lifecycle/pragma-lifecycle.yml
+- type: Conformance
+  url: conformance/pragma-conformance.yml
+- type: Packages
+  url: packages/pragma-packages.yml
+- type: SDKs
+  url: packages/pragma-packages.yml
+- type: DomainSecurity
+  url: security/pragma-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

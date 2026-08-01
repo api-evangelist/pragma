@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.firstlook.gg
+versioning:
+  scheme: uri-path
+  current: external
+  docs: https://docs.firstlook.gg/developers/api/
+  detail: FirstLook External API served under the /external base path.
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  detail: No public deprecation/sunset policy located.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.firstlook.gg
+status_page_detail: >-
+  Public status/uptime page for FirstLook, monitoring https://game.firstlook.gg
+  from multiple global locations (Miami, Helsinki, Roubaix, Montreal, Frankfurt,
+  Los Angeles) with uptime, Apdex, and response-time metrics.
+deprecated_operations: []

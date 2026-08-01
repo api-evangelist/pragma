@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.firstlook.gg/developers/api/
+notes: >-
+  Cross-cutting request/response semantics for the FirstLook External API,
+  captured from the public developer docs and API reference. Endpoint-level
+  detail (paths, parameters, response schemas) is published as an interactive
+  Swagger UI at https://api.firstlook.gg/external/swagger-ui/; fields left null
+  below are not documented on the public surface and were not fabricated.
+authentication:
+  style: scoped-api-token
+  location: header
+  detail: >-
+    Scoped API tokens created in the FirstLook dashboard (see
+    authentication/pragma-authentication.yml and scopes/pragma-scopes.yml).
+versioning:
+  scheme: uri-path
+  detail: External API is served under the /external base path (https://api.firstlook.gg/external).
+pagination:
+  style: filter-based
+  detail: Player queries accept filters; exact pagination params are enumerated in the Swagger UI.
+  params: null
+  response_fields: null
+idempotency:
+  supported: unknown
+  detail: No idempotency-key contract is documented on the public developer surface; not asserted.
+error_envelope:
+  detail: Not documented on the public surface; see the Swagger UI for per-operation responses.
+rate_limiting:
+  documented: false
+request_tracing:
+  documented: false
+cross_links:
+  authentication: authentication/pragma-authentication.yml
+  scopes: scopes/pragma-scopes.yml
+  lifecycle: lifecycle/pragma-lifecycle.yml

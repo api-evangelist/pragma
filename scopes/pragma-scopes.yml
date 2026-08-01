@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.firstlook.gg/developers/api/
+docs: https://docs.firstlook.gg/developers/api/
+notes: >-
+  FirstLook External API tokens are scoped: each token is granted one or more of
+  the permission categories below at creation time (Settings -> Developer). These
+  are the documented scope groups; the exact machine scope strings are enumerated
+  in the Swagger UI at https://api.firstlook.gg/external/swagger-ui/.
+schemes:
+  - name: FirstLookApiToken
+    type: apiKey
+    source: https://docs.firstlook.gg/developers/api/
+scopes:
+  - scope: players.query
+    description: Search players with filters.
+    sources: [https://docs.firstlook.gg/developers/api/]
+  - scope: players.lookup
+    description: Fetch a single player, or find-or-create a player.
+    sources: [https://docs.firstlook.gg/developers/api/]
+  - scope: analytics.events.write
+    description: Record analytics events — send sessions, counters, and durations (requires the Retention feature).
+    sources: [https://docs.firstlook.gg/developers/api/]
+  - scope: surveys.read
+    description: List and export surveys.
+    sources: [https://docs.firstlook.gg/developers/api/]
+  - scope: creators.read
+    description: Search creators and read the public creator leaderboard.
+    sources: [https://docs.firstlook.gg/developers/api/]

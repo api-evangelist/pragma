@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.firstlook.gg/developers/sdk/
+notes: >-
+  Pragma's first-party client libraries are game-engine SDKs distributed as
+  engine plugins/packages (not published to npm/PyPI/Maven under discoverable
+  names). The public GitHub org (github.com/pragmaplatform) hosts internal
+  tooling and forks, not the client SDKs. Only clearly first-party SDKs are
+  marked official.
+packages:
+  - language: csharp
+    engine: unity
+    registry: docs
+    name: FirstLook Unity SDK
+    url: https://docs.firstlook.gg/developers/sdk/unity/
+    install: Install the FirstLook Unity package and set two URLs; supports Steam and Google Play auth.
+    official: true
+  - language: cpp
+    engine: unreal
+    registry: docs
+    name: FirstLook Unreal SDK
+    url: https://docs.firstlook.gg/developers/sdk/unreal/
+    install: Drop in the FirstLook Unreal plugin and set two URLs; supports Steam auth.
+    official: true
+  - language: cpp
+    engine: unreal
+    registry: docs
+    name: Pragma Connect Unreal SDK
+    url: https://cloud-docs.pragma.gg/get-started
+    install: Pragma Connect backend integration for Unreal (accounts, social, commerce).
+    official: true
+  - language: csharp
+    engine: unity
+    registry: docs
+    name: Pragma Connect Unity SDK
+    url: https://cloud-docs.pragma.gg/get-started
+    install: Pragma Connect backend integration for Unity (accounts, social, commerce).
+    official: true

@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://docs.firstlook.gg/integrations/mcp/
+server:
+  name: firstlook
+  transport: http          # Streamable HTTP
+  url: https://mcp.firstlook.gg/mcp
+  auth: oauth2             # log in with FirstLook account during connector setup
+notes: >-
+  Hosted Model Context Protocol server for FirstLook (a Pragma product). Connects
+  AI assistants (Claude via Customize -> Connectors; ChatGPT via Developer Mode
+  connector with OAuth) directly to FirstLook player and analytics data. A beta
+  in-dashboard agent is also offered on request. Tool schemas below are summarized
+  from the public MCP docs; the authoritative list is served by the live server.
+tools:
+  - name: query_players
+    description: Query and filter players by location, signup date, and playtime metrics, including custom per-game player attributes.
+  - name: count_players
+    description: Fast total player counts.
+  - name: player_analytics
+    description: Signup comparisons, geographic breakdowns, and growth-trend analytics.
+  - name: manage_players
+    description: Bulk player management — tagging, granting invites, and updating roles.
+  - name: steam_sessions
+    description: Steam play-session data and player hour tracking.
