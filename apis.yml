@@ -85,6 +85,11 @@ apis:
   baseURL: https://cloud-docs.pragma.gg
   tags:
   - Game Backend
+  - Account
+  - Social
+  - Commerce
+  tags_raw:
+  - Game Backend
   - Accounts
   - Social
   - Commerce
