@@ -74,6 +74,12 @@ apis:
   baseURL: https://api.firstlook.gg/external
   tags:
   - Playtesting
+  - Player
+  - Analytics
+  - Surveys
+  - Creators
+  tags_raw:
+  - Playtesting
   - Players
   - Analytics
   - Surveys
