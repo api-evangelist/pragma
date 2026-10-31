@@ -64,6 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pragma is a company surfaced as a portfolio company of greylock, insight-partners and added to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting the enrichment pipeline.
+Pragma is a backend infrastructure company for game developers, used by more than half of top PC and console studios (including studios such as Bungie, EA, and Remedy) to launch and operate live games. The Pragma Platform provides a game backend engine (game loops, player data, live operations, telemetry, and admin dashboards), plus social and commerce services (cross-platform authentication with Steam, Discord, Twitch, PlayStation, Xbox and more, virtual currency, entitlements, and order management). Pragma Connect packages these as a suite of backend tools for Unreal and Unity. Pragma also operates FirstLook, a playtest and community-management platform that runs onboarding, key management, surveys, rewards, creator programs, and player analytics — and exposes a public external REST API (scoped API tokens), Unity/Unreal SDKs, and a hosted MCP server for AI assistants. Added to the API Evangelist network from VC-portfolio signal (Greylock, Insight Partners) and enriched from Pragma's public developer surface.
 
-Backed by: greylock, insight-partners — https://pragma.gg/
+**Areas:** Company · Infrastructure · Gaming · Game Backend · Live Operations · Player Accounts · Authentication · Commerce · Playtesting · Community · Analytics · Developer Tools
+
+## Pragma on APIs.io
+
+Everything profiled for Pragma is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pragma/](https://apis.io/providers/pragma/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [FirstLook External API](https://apis.io/apis/pragma/firstlook-external-api/) — Public external REST API for FirstLook, Pragma's playtest and community platform. Uses scoped API tokens to query players, look up or find-or-create a…
+- [Pragma Connect](https://apis.io/apis/pragma/pragma-connect/) — Pragma Connect is a suite of backend game-development tools — player accounts, social, economy/commerce, and Limited Access Mode — that integrate with…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [firstlook](https://apis.io/servers/pragma/firstlook/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pragma Authentication](https://apis.io/security/pragma/pragma-authentication/)
+- [Pragma Domain Security](https://apis.io/security/pragma/pragma-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Pragma Scopes](https://apis.io/scopes/pragma/pragma-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://pragma.gg/)
+- [Documentation](https://docs.firstlook.gg/)
+- [Getting started](https://cloud-docs.pragma.gg/get-started)
+- [API reference](https://api.firstlook.gg/external/swagger-ui/)
+- [Pricing](https://pragma.gg/pricing)
+- [Sign up](https://app.firstlook.gg/manage/~/signup)
+- [Support](https://pragma.gg/contact-us)
+- [Blog](https://pragma.gg/blog)
+- [Terms of service](https://pragma.gg/terms-of-service)
+- [Privacy policy](https://pragma.gg/privacy-policy)
+- [GitHub](https://github.com/pragmaplatform)
+- [Status](https://status.firstlook.gg)
+
+## API Evangelist rating
+
+**Kin Score 34.1** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 44.7 |
+
+**Agent readiness 6.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pragma/](https://apis.io/providers/pragma/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pragma: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pragma/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
